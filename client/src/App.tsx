@@ -1,24 +1,16 @@
-import { useEffect } from "react";
-import socket from "./socket";
+import ChatWindow from "./components/ChatWindow";
+import MessageInput from "./components/MessageInput";
 
 function App() {
-  useEffect(() => {
-    socket.on("connect", () => {
-      console.log("🟢 Connected to backend:", socket.id);
-    });
-
-    socket.on("disconnect", () => {
-      console.log("🔴 Disconnected from backend");
-    });
-
-    return () => {
-      socket.disconnect();
-    };
-  }, []);
-
   return (
-    <div className="p-4 text-2xl text-green-700 font-bold">
-      Pixel Chat is Live with Socket.IO 🚀
+    <div className="flex flex-col h-screen max-w-2xl mx-auto border rounded shadow bg-white">
+      <header className="bg-blue-600 text-white p-4 text-xl font-semibold rounded-t">
+        Pixel Chat
+      </header>
+      <div className="flex-1 overflow-hidden">
+        <ChatWindow />
+      </div>
+      <MessageInput />
     </div>
   );
 }
