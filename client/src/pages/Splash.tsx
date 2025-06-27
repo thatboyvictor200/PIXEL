@@ -1,30 +1,21 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import "../styles/Splash.css"; // import your custom CSS
 
 export default function Splash() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timeout = setTimeout(() => {
       navigate("/welcome");
-    }, 3000); // 3 seconds
+    }, 8000);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timeout);
   }, [navigate]);
 
   return (
-    <motion.div
-      className="flex items-center justify-center min-h-screen bg-black"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.2 }}
-    >
-      <img
-        src="/pixel-splash.png"
-        alt="Pixel Splash"
-        className="w-4/5 max-w-xs"
-      />
-    </motion.div>
+    <div className="splash-container">
+      <img src="/pixel.png" alt="Pixel Logo" className="splash-logo" />
+    </div>
   );
 }
