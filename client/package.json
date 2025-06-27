@@ -12,6 +12,7 @@
   "dependencies": {
     "framer-motion": "^12.19.1",
     "lucide-react": "^0.523.0",
+    "node": "^20.19.0",
     "path": "^0.12.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

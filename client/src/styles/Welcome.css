@@ -1,0 +1,144 @@
+.welcome-page {
+  position: relative;
+  background: rgb(0, 0, 0);
+  min-height: 100vh;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+.welcome-content {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.welcome-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pixel-gradient {
+  background: linear-gradient(90deg, #00bfff, #ff00ff, #00ffcc);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.welcome-subtext {
+  color: #a0c4ff;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  min-height: 24px;
+  line-height: 1.5;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 1px;
+  background-color: #a0c4ff;
+  animation: blink 1s step-end infinite;
+  height: 1em;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.welcome-button {
+  margin-top: 2rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.welcome-button:hover {
+  background-color: #2563eb;
+}
+
+.welcome-policy {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 1rem;
+}
+
+.link-text {
+  color: #60a5fa;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.link-text:hover {
+  color: #93c5fd;
+}
+
+.sparkle {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff33;
+  animation: float 6s infinite ease-in-out;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sparkle-1 { top: 10%; left: 10%; animation-delay: 0s; color: #f472b6; }
+.sparkle-2 { top: 20%; right: 10%; animation-delay: 2s; color: #60a5fa; }
+.sparkle-3 { bottom: 15%; left: 25%; animation-delay: 1s; color: #34d399; }
+.sparkle-4 { bottom: 10%; right: 20%; animation-delay: 3s; color: #facc15; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 0.5; }
+  50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
+}
+
+.w-logo {
+  width: 36px;
+  height: 36px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .welcome-heading {
+    font-size: 1.75rem;
+  }
+
+  .welcome-subtext {
+    font-size: 0.9rem;
+  }
+
+  .welcome-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
