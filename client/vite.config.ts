@@ -1,6 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+/// <reference types="node" />
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(new URL('', import.meta.url));
+const __dirname = dirname(__filename);
+
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -9,7 +16,15 @@ export default defineConfig({
         target: 'http://localhost:5000',
         changeOrigin: true,
         ws: true,
-      }
-    }
-  }
-})
+      },
+    },
+    hmr: {
+      overlay: false,
+    },
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },  
+});
