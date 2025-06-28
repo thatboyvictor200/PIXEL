@@ -1,0 +1,44 @@
+.react-tel-input .flag-dropdown {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .react-tel-input .selected-flag {
+    padding: 0 12px;
+    background-color: #1a1a1a;
+  }
+  
+  .react-tel-input .country-list {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .react-tel-input .country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: rgb(195, 195, 195);
+    transition: background-color 0.2s;
+  }
+  
+  .react-tel-input .country:hover {
+    background-color: #2c2c2c;
+    cursor: pointer;
+  }
+  
+  .react-tel-input .country-name {
+    flex: 1;
+    padding-left: 10px;
+  }
+  
+  .react-tel-input .dial-code {
+    color: #aaa;
+    font-size: 13px;
+  }
+  

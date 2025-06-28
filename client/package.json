@@ -10,13 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "framer-motion": "^12.19.1",
+    "libphonenumber-js": "^1.12.9",
     "lucide-react": "^0.523.0",
     "node": "^20.19.0",
     "path": "^0.12.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.58.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.4.12",
     "react-router-dom": "^7.6.2",
+    "react-select": "^5.10.1",
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {

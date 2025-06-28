@@ -60,7 +60,7 @@ export default function Welcome() {
           <span className="cursor">|</span>
         </p>
 
-        <Link to="/register">
+        <Link to="/number">
           <Button className="welcome-button">Get Started</Button>
         </Link>
 

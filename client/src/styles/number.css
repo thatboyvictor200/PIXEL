@@ -1,0 +1,78 @@
+.phone-entry-page {
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .phone-entry-box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.1);
+  }
+  
+  .phone-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fcd34d;
+  }
+  
+  .phone-button {
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+  }
+  
+  .phone-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .phone-input-container {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .phone-input-container {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .react-tel-input .form-control {
+    background-color: #111827 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .react-tel-input .flag-dropdown {
+    background-color: #1f2937 !important;
+    border: none !important;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+  
+  .react-tel-input .country-list {
+    background-color: #000 !important;
+    color: white !important;
+  }
+  
+  .react-tel-input .country:hover {
+    background-color: #1e40af !important;
+  }
+  
