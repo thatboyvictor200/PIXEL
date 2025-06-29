@@ -26,5 +26,9 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
-  },  
-});
+  },
+  root: ".", // root should be the folder where index.html is
+  build: {
+    outDir: "dist",  
+}});
+
